@@ -2,6 +2,13 @@ package ie.tudublin;
 
 public class Main
 {
+
+    public static void BugZap()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new BugZap());
+    }
+
     public static void helloProcessing()
 	{
 		String[] a = {"MAIN"};
@@ -33,8 +40,8 @@ public class Main
     }
     public static void main(String[] args)
     {
-        helloProcessing();
-
+        // helloProcessing();
+        BugZap();
         // Tara Misty
         // Tara Tara
         
