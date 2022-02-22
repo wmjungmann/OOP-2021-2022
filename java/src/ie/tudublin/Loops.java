@@ -68,7 +68,7 @@ public class Loops extends PApplet {
 				}
 			}
 				break;
-			case 2:
+			case 2: {
 				background(255);
 				int circles = (int) (mouseX / 20.0f);
 				offset += (mouseY / 100.0f);
@@ -83,7 +83,24 @@ public class Loops extends PApplet {
 						circle(x, y, d);
 					}
 				}
+			}
+				break;
+		
+			case 3: {
+				background(255);
+				int c = 250;
+				int length = 100;
 
+				stroke(0);	
+				strokeWeight(2);
+				line(c, c, c, c - length);
+				line(c, c, length - length * sin(60), c + length * sin(60));
+				line(c, c, (width - length) + length * sin(60), c + length * sin(60));
+				line(c, c, (width - length) - length * sin(45), c + length * sin(45) );
+				line(c, c, length + length * sin(45), c + length * sin(45) );
+			
+			}
+			
 				// map(a,b,c,d,e);
 				// a = inputvalue
 				// b - c - start and end of the first range
