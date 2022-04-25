@@ -150,9 +150,22 @@ public class Audio1 extends PApplet
                 circle(i, halfH + f, 5);                    
                 circle(i, halfH - f, 5);                    
             }
+
+        case 5:
+            stroke(255);
+            fill(100, 255, 255);        
+            background(0);
+            circle(width / 2, halfH, smoothedAmplitude * 1000);
+
+           /* circle(100, y, 50);
+            y += random(-10, 10);
+            smoothedY = lerp(smoothedY, y, 0.1f);        
+            circle(200, smoothedY, 50);
+            */
             break;
 
         }
+
         
 
 
